@@ -19,3 +19,12 @@ The input for numbers being a string makes things a bit awkward. Right now, just
 functions to take a single character, change it to an integer by subtracting its ascii code from the ascii code for 0,
 and then turning it back after parsing. Other than that limitation, the function to create the stacks and the one to 
 evaluate stacks works. 
+
+March 5th, 2:30pm == Pre-session 2
+
+I was talking to a friend about my issue with the string input, and I think what I'll do is handle each number as a list
+of characters. Then I can have a function recursively go through the list, and use the length of the remaining list 
+as a proxy for the 10s place I need to multiply that digit by. The way I'll process the initial string is I'll add a
+parameter, numMake, that I'll put numbers into when I reach them. Then, once I hit an operator or whitespace, I reverse
+numMake and cons it into the nums list. That way consecutive integers get treated as the same number. This will create
+a bunch of empty lists in nums, but I can just filter those out before sending it to the evaluate-stacks function.
