@@ -20,11 +20,22 @@ functions to take a single character, change it to an integer by subtracting its
 and then turning it back after parsing. Other than that limitation, the function to create the stacks and the one to 
 evaluate stacks works. 
 
-March 5th, 2:30pm == Pre-session 2
+March 5th 2026, 2:30pm == Pre-session 2
 
 I was talking to a friend about my issue with the string input, and I think what I'll do is handle each number as a list
 of characters. Then I can have a function recursively go through the list, and use the length of the remaining list 
 as a proxy for the 10s place I need to multiply that digit by. The way I'll process the initial string is I'll add a
 parameter, numMake, that I'll put numbers into when I reach them. Then, once I hit an operator or whitespace, I reverse
 numMake and cons it into the nums list. That way consecutive integers get treated as the same number. This will create
-a bunch of empty lists in nums, but I can just filter those out before sending it to the evaluate-stacks function.
+a bunch of empty lists in nums, but I can just filter those out before sending it to the evaluate-stacks function
+
+
+-- This gets me fully up to date with where I was when I started reconstructing this devlog --
+
+
+March 5th 2026, 5:21pm == Post-session 2
+
+My method for handling numbers greater than 2 digits worked pretty well. I can't really handle doubles, 
+but I'm not sure that I have to. I added some error handling, but I still need to check for a divide by 0 error.
+I implemented the user input loop, so all I have left other than that last error is to implement the history. I'll
+think about that later though.
