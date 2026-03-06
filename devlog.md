@@ -46,3 +46,11 @@ March 5th 2026, 10:28pm == Pre-session 3
 I'm feeling sick and tired in very literal senses so I doubt I'll actually get much done, but I'm planning on
 implementing the check for the history call (i.e. processing the $number). I'll implement the history itself
 another time
+
+March 5th 2026, 10:47pm == Post-session 3
+Ok yeah I've decided I'm not doing anything. 
+I think I'll need to convert calls to the history into their numbers as soon as I recieve them to ensure they
+go into the stack at the right position. I'm not super sure how I'll go about that given the way I'm processing
+numbers though. Maybe when I find a $ I put it into numMake, and then when I'm flushing numMake to nums, I check 
+to see if there's a $, and if there is a helper function decides what should go into nums based on the history.
+Maybe I'll think of a better solution after some sleep. We'll see tomorrow.
