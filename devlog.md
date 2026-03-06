@@ -39,3 +39,10 @@ My method for handling numbers greater than 2 digits worked pretty well. I can't
 but I'm not sure that I have to. I added some error handling, but I still need to check for a divide by 0 error.
 I implemented the user input loop, so all I have left other than that last error is to implement the history. I'll
 think about that later though.
+
+
+
+March 5th 2026, 10:28pm == Pre-session 3
+I'm feeling sick and tired in very literal senses so I doubt I'll actually get much done, but I'm planning on
+implementing the check for the history call (i.e. processing the $number). I'll implement the history itself
+another time
