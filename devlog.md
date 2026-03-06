@@ -54,3 +54,27 @@ go into the stack at the right position. I'm not super sure how I'll go about th
 numbers though. Maybe when I find a $ I put it into numMake, and then when I'm flushing numMake to nums, I check 
 to see if there's a $, and if there is a helper function decides what should go into nums based on the history.
 Maybe I'll think of a better solution after some sleep. We'll see tomorrow.
+
+
+March 6th 2026, 1:17pm == Pre-session 4
+I'm feeling much better now. I like the thoughts I had last night with how I'll process the history. Thinking about it,
+it almost doesn't even need to be its own function since I can just use list-ref at whatever the number is,
+but I think error handling (making sure it's a number, making sure the history goes that far back, etc) means 
+it'll be clunky enough to merit its own function. Also, I remembered I need to implement batch mode. I'll take a look at that last though.
+
+These functions are getting really messy, but at this point it'd be more of a hassle to make them their own function calls, so I'm just really sorry.
+
+I'm realizing that the way my functions call each other doesn't really work with a history, since my main function prints out the result of the 
+evaluate stacks function. So it's a new function call every time. Maybe I'll have the evaluate stacks function print out the result of the calculation
+and return the history, so that the main function can pass the history into the next create stacks function. It's not a super scalable solution, 
+but this project doesn't have a long term so I think it'll be fine.
+
+Handling the logic has proved to be extremely bulky, I am so incredibly sorry. I'll do my best to comment well, but it's not the most readable program.
+Also I realized that having the evaluate-stacks print the result doesn't work because of scopes, but I can just have main print the most recent
+thing on the history.
+
+
+March 6th 2026, 3:26pm == Post-session 4
+
+It took a lot of debugging, largely due to my extremely sloppy (both in what it does and how it's written) parser, but the history seems to work 
+perfectly fine now. The only thing I have left is to implement batch mode vs interactive mode and checking for the divide by 0 error.
