@@ -78,3 +78,12 @@ March 6th 2026, 3:26pm == Post-session 4
 
 It took a lot of debugging, largely due to my extremely sloppy (both in what it does and how it's written) parser, but the history seems to work 
 perfectly fine now. The only thing I have left is to implement batch mode vs interactive mode and checking for the divide by 0 error.
+
+
+March 6th 2026, 5:05pm == Pre-session 5
+Hopefully this is the last session. I plan on implementing batch mode (which should be as simple as a handful of cond statements before output),
+check for divide by 0, and then I should be done
+
+
+March 6th 2026, 8:45pm == Post-session 5
+Everything seems to be working fine. Checking for divide by 0 somehow uncovered a bunch of dormant logic issues that took a ton of debugging and rewriting, but it works now. Time to write the readme and submit.
