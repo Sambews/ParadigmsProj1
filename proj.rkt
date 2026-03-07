@@ -150,3 +150,5 @@
          [(string=? input "quit") (displayln "Exiting")]
          [else (mainH input (create-stacks input hist))])
             ]))
+
+(main)
